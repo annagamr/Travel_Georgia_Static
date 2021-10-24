@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send a Question</title>
+  <link href="CSS/normal.css" rel="stylesheet" type="text/css" media="screen">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+
+      <!--for screenreaders; nav is used for navigation elements -->
+      <nav id="skip">
+        <h2>Jump to Content</h2>
+        <a href="#content">Skip to Content</a>
+        <a href="" id="activate-normal">Back to Normal Mode</a>     
+      </nav>
+
+      <!--make div to act as a container for logo set properties in css-->
+      <div class="header">
+        <img id="logo" src="Photos/logo.png" alt="Logo of the Website">
+        <div class="header-right">
+          <ul>
+            <li><a href="" id="activate-high-contrast"><img src="CSS/high-contrast.svg" alt="High contrast" width="25"></a></li>
+            <li><a class="menu" href="index.html"><b>Home</b></a></li>
+            <li><a class="menu" href="culture.html"><b>Culture</b></a> </li>
+            <li><a class="menu" href="cuisine.html"><b>Cuisine</b></a></li>
+            <li><a class="current" href="help.html"><b>Contact Us</b></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </header>
+    <hr>
+    <main id="content">
+
+      <h1 id="question">CONTACT US</h1>
+
+
+
+
+      <form action="mailto:gamreklidzeanna@gmail.com" method="post" enctype="text/plain">
+
+        <fieldset>
+          <legend><strong>FILL THE FORM</strong></legend>
+          <label for="personname"><strong>Name*:</strong></label><br>
+          <input type="text" name="name" id="personname" size="25" maxlength="100" required><br>
+          <label for="address"><strong>E-mail*:</strong></label><br>
+          <input type="email" name="mail" id="address" size="25" maxlength="100" required><br>
+
+          <strong>Gender</strong>:
+          <input type="radio" name="genders" value="Female" id="fem"> <label for="fem">Female</label>
+          <input type="radio" name="genders" value="Male" id="man"> <label for="man">Male</label>
+          <input type="radio" name="genders" value="Other" id="oth"> <label for="oth">Other</label> <br>
+
+          <label for="message"><strong>Message*</strong>:</label><br>
+          <textarea id="message" name="Message" rows="4" cols="40" maxlength="1500" required>  </textarea><br>
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+          <label for="newsletter"><strong>I want to receive newsletters!</strong></label><br>
+
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </fieldset>
+
+      </form>
+    </main>
+
+
+
+
+
+    <hr>
+    <footer>
+      <address>
+          <p>Author: Ani Gamreklidze <br>
+          Email: <a href="mailto:gamreklidzeanna@gmail.com">gamreklidzeanna@gmail.com</a><br>
+          Phone Number: <a href="tel:+36205461635">+36 20 546-1635</a><br>
+          Address: 1114 Budapest, Hungary
+          <!-- <p>Author: Ani Gamreklidze (<a href="mailto:gamreklidzeanna@gmail.com">gamreklidzeanna@gmail.com)</a><br>
+          1114 Budapest, Hungary -->
+          </p>
+          </address>
+  </footer>
+  </div>
+ 
+</body>
+<script src="CSS/switch1.js"> </script>
+</html>
